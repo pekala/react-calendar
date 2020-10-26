@@ -92,6 +92,7 @@ isView.isRequired = (props, propName, componentName) => {
 
 export const tileGroupProps = {
   activeStartDate: PropTypes.instanceOf(Date).isRequired,
+  activeTabDate: PropTypes.instanceOf(Date).isRequired,
   hover: PropTypes.instanceOf(Date),
   locale: PropTypes.string,
   maxDate: isMaxDate,
@@ -119,6 +120,7 @@ export const tileProps = {
   minDate: isMinDate,
   onClick: PropTypes.func,
   onMouseOver: PropTypes.func,
+  isFocusable: PropTypes.bool,
   style: PropTypes.objectOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
